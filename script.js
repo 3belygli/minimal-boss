@@ -33,6 +33,12 @@ async function loadTodos() {
     todos.forEach(todo => {
         const li = document.createElement('li');
         li.textContent = todo.title;
+
+        if (todo.done == 1) {
+            li.classList.add('done');
+        }
+
         list.appendChild(li);
     });
 }
+

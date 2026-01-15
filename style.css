@@ -59,6 +59,19 @@ body {
     transition: background 0.15s ease;
 }
 
-#add:hover {
-    background: #000;
+ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+li::before {
+    margin-right: 8px;
+}
+
+li.done::before {
+    content: "✓";
+}
+
+li:not(.done)::before {
+    content: "✗";
 }
