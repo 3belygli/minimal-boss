@@ -15,7 +15,7 @@
 </form>
 </div> 
 <br>
-<div class = "list">
+<div class="list">
  <ul id="todo-list"></ul>
 </div>
 </body>
