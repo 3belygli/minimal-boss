@@ -41,6 +41,13 @@ body {
   box-shadow:
     0 10px 25px rgba(0, 0, 0, 0.08),
     0 1px 0 rgba(255, 255, 255, 0.8) inset;
+
+    background: rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  box-shadow:
+    0 10px 25px rgba(0, 0, 0, 0.08),
+    0 1px 0 rgba(255, 255, 255, 0.2) inset;
 }
 
 #title {
@@ -108,9 +115,32 @@ body {
     0 8px 20px rgba(0, 0, 0, 0.08),
     0 1px 0 rgba(255, 255, 255, 0.8) inset;
 
+    background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  box-shadow:
+    0 8px 20px rgba(0, 0, 0, 0.08),
+    0 1px 0 rgba(255, 255, 255, 0.2) inset;
+
   margin-bottom: 10px;
 
   transition:
     transform 0.12s ease,
     box-shadow 0.12s ease;
+  width: 300px;
+}
+
+button{
+  background-color: transparent;
+  border: transparent;
+  border-radius: 5px;
+  padding: 0px;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+/* Kiemelés a billentyűzetes 1–10 kijelöléshez */
+#todo-list li.selected {
+  background-color: rgba(30, 58, 138, 0.15); /* halvány kék háttér */
+  border-radius: 6px;
 }
